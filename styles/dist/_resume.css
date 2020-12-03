@@ -1,0 +1,40 @@
+.information {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  box-shadow: 10px 10px 20px lightgray;
+  border-color: lightgray;
+  width: 90%;
+  margin: 4rem auto;
+}
+.information p {
+  line-height: 4rem;
+  margin: 1rem;
+}
+
+.sidebar {
+  flex: 1 1 10rem;
+  width: 25rem;
+  margin: 1rem;
+  border-style: solid;
+  border-color: lightgray;
+}
+.sidebar h1,
+.sidebar h2,
+.sidebar h4 {
+  padding: 1.5rem;
+  background: lightgray;
+}
+.sidebar p {
+  word-wrap: break-word;
+}
+
+.main-content {
+  margin: 1rem;
+  flex: 1 1 60rem;
+}
+.main-content h2 {
+  background: lightgrey;
+  padding: 1.5rem;
+}

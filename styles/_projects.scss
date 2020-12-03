@@ -1,0 +1,36 @@
+.sheerclean img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    margin: 0;
+}
+
+.projects {
+    // padding-top: 10rem;
+    width: 100%;
+    margin: auto;
+    min-height: 90vh;
+    @include flex(space-between, center, column);
+    text-align: center;
+    flex-wrap: wrap;
+    h2 {
+        margin: 2rem;
+    }
+}
+
+.sheerclean,
+.elenajoy,
+.travelly {
+    margin: 1rem;
+    flex: 1 1 20rem;
+}
+
+.travelly img,
+.elenajoy img {
+    width: 100%;
+    height: 100%;
+}

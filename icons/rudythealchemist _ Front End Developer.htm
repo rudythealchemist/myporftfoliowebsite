@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <!-- the character set that the computer understands in english, symbols etc. -->
+    <title>rudythealchemist | Front End Developer
+    </title>
+    <meta name="description" content="Front end developer, web developer, freelancedeveloper, speccializes in HTML, CSS and JavaScript">
+    <!-- for SEO optimizeation, name of page and content when searching -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- makes window scalable on mobile devies or when page shrinks -->
+    <meta name="robots" content="index,follow">
+    <!-- provide instructions to search engine crawler to index webpage or not.optionally (<meta name="robots" content="no noindex,nofollow")>-->
+    <!-- Latest compiled and minified CSS -->
+    
+    <!-- creates file path for favicon in browser tab  -->
+    
+    <!-- links css style sheet to html -->
+
+<link rel="icon" href="http://127.0.0.1:5500/img/favicon.svg"><link rel="stylesheet" href="./rudythealchemist _ Front End Developer_files/style.css"></head>
+
+<body>
+    <header class="main-head">
+        <nav>
+            <div class="logo">
+
+                <img src="./rudythealchemist _ Front End Developer_files/code.svg" alt="logo">
+                <h1>Raldine Henry</h1>
+                <ul>
+                    <li>
+                        <a href="http://127.0.0.1:5500/home">Home</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/projects">projects</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/contact">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <section class="intro">
+        <div class="intro-text">
+            <h2>Raldine Henry</h2>
+            <h3>Front End Web <br> Developer
+            </h3>
+            <div class="intro-social">
+                <a href="http://127.0.0.1:5500/index.html#"><img src="./rudythealchemist _ Front End Developer_files/github.svg" alt="github social link"></a>
+                <a href="http://127.0.0.1:5500/index.html#"><img src="./rudythealchemist _ Front End Developer_files/linked-in.svg" alt="linkedIn social link"></a>
+                <!-- upwork icon should be added -->
+            </div>
+        </div>
+        <div class="intro-images">
+            <img src="./rudythealchemist _ Front End Developer_files/profilepic.jpeg" class="profilepic" alt="">
+            <img src="./rudythealchemist _ Front End Developer_files/cloud.png" class="cloud moving-cloud-1" alt="cloud">
+            <img src="./rudythealchemist _ Front End Developer_files/cloud.png" class="cloud moving-cloud-2" alt="cloud">
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="./rudythealchemist _ Front End Developer_files/main.js"></script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

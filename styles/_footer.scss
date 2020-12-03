@@ -1,0 +1,10 @@
+footer {
+    top: 0;
+    min-height: 10vh;
+    background: linear-gradient( #38d39f, #38a4d3);
+    padding: 0% 5%;
+    @include flex(center, center, row);
+    h4 {
+        padding: 3rem;
+    }
+}

@@ -1,0 +1,149 @@
+.main-head {
+    // @include // margin: 0 0 0 auto;
+    background: $gradient;
+}
+
+nav {
+    @include flex(space-between, center, row);
+    min-height: 10vh;
+    flex-wrap: wrap;
+    .logo {
+        @include flex(flex-start, center, row);
+        flex: 1 1 10rem;
+    }
+    ul {
+        @include flex(space-around, center, row);
+        flex: 1 1 40rem;
+    }
+}
+
+// nav {
+//     @include flex(space-between, center, row);
+//     min-height: 10vh;
+//     .logo {
+//         @include flex(flex-start, center, column);
+//         flex-wrap: wrap;
+//         flex: 1 1 10rem;
+//     }
+//     ul {
+//         @include flex( space-around, center, row);
+//         flex: 1 1 40rem;
+//     }
+// }
+.intro {
+    // text-align: center;
+    min-height: 90vh;
+    margin: auto;
+    flex-wrap: wrap;
+    @include flex(space-between, center, row);
+    h2,
+    h3 {
+        font-size: 2rem;
+        // color: white;
+    }
+}
+
+.active {
+    background: $gray-text;
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+}
+
+.intro-social {
+    margin-top: 2rem;
+}
+
+a {
+    margin-right: 3rem;
+}
+
+// .intro-text,
+// .intro-images {
+//     flex: 1 1 40rem;
+// }
+// backgroud image, profilepic and clouds
+.intro {
+    min-height: 100vh;
+    background: url("/icons/goldengate.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.intro-section {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.profilepic {
+    height: 25rem;
+    width: 25rem;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.intro-social {
+    text-align: center;
+}
+
+.cloud {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+.cloud {
+    width: 50vw;
+    height: 50vh;
+}
+
+
+/* transition effects added to cloud images */
+
+.moving-cloud-1 {
+    z-index: 1;
+    animation: cloudAnimation 5s infinite alternate ease-in-out;
+    -webkit-animation: cloudAnimation 5s infinite alternate ease-in-out;
+}
+
+.moving-cloud-2 {
+    top: 5%;
+    z-index: 2;
+    opacity: 0.3;
+    animation: cloudAnimation 4s infinite alternate ease-in-out;
+    -webkit-animation: cloudAnimation 4s infinite alternate ease-in-out;
+}
+
+
+/* adding transitions using keyframes(need to understand more */
+
+@keyframes cloudAnimation {
+    from {
+        transform: translate(10%, -10%);
+        /*movesonxandyaxis*/
+        -webkit-transform: translate(10%, 10%);
+        -moz-transform: translate(10%, -10%);
+        -ms-transform: translate(10%, -10%);
+        -o-transform: translate(10%, -10%);
+        -webkit-transform: translate(10%, -10%);
+    }
+    to {
+        transform: translte(0%, 0%);
+        -webkit-transform: translte(0%, 0%);
+        -moz-transform: translte(0%, 0%);
+        -ms-transform: translte(0%, 0%);
+        -o-transform: translte(0%, 0%);
+    }
+}
